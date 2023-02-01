@@ -1,0 +1,94 @@
+.body {
+    font-family: Calibri;
+    background-color: #bfa958;
+    color: #6b4e30;
+    font-size: 18px;
+}
+
+.body-bg {
+    padding: 0 60px 60px 60px;
+    margin-left: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.bg {
+    background-color: #fadd73;
+    padding: 10px;
+}
+
+
+.header {
+    display: block;
+    position: relative;
+    margin-left: -5.5%;
+}
+
+footer {
+    padding: 0 10px 10px;
+    margin-top: 10px;
+    background-color: #fadd73;
+    height: 100px;
+    width: 881px;
+    position: relative;
+    align-self: center;
+}
+
+.link-box {
+    display: block;
+    position: absolute;
+    top: 500px;
+    padding: 0px 5px;
+    height: 300px;
+    width: 100px;
+    background-color: #fadd73;
+}
+
+.alo {
+    font-size: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: #573f25;
+}
+
+.p1 {
+    margin-left: 40px;
+}
+
+.hr {
+    border: none;
+    background-color: #6d9e6d;
+    color: #6d9e6d;
+    height: 2px;
+}
+
+/* ХАЙДБОКСЫ */
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #28c96b;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    padding: 10px; 
+}
+
+/* оформляем текст label */
+
+.hide + label {
+    padding: 0;
+    color: #3f5c3f;
+    cursor: pointer;
+    display: inline-block;
+}
